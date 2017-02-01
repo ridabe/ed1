@@ -1,0 +1,760 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/01/2016, 12:17:04
+    Author     : admedmilson
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*{
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    background-image: url(../..//img/beige.jpg) !important; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.topo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,.12);
+    /*    border-bottom: 1px solid silver;
+    box-shadow: 0px 1px rgb(0.0.0. 0.5);*/
+    z-index: 1;
+}
+
+.topo > .a_entrar{
+    position: absolute;
+    right: 180px;
+    top: 23px;
+    color: #686868;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.topo > .a_sair{
+    position: absolute;
+    right: 140px;
+    top: 23px;
+    color: #20c05c;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.topo > .icons{
+    position: absolute;
+    top: 50%;
+    margin-top: -12.5px;
+    height: 25px;
+    width: 25px;
+    right: 100px;
+    border-radius: 100%;
+    background: #758075;
+}
+
+.topo > .icons:hover{
+    background: rgba(117, 128, 117, 0.71);
+    cursor: pointer;
+}
+
+.topo > .icons > span > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -7.5px;
+    margin-top: -7px;
+    height: 14px;
+    width: 14px;
+}
+
+.topo > a > img{
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.conteiner_menu{
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background: #393276;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    /*    border-bottom: 1px solid silver;
+        box-shadow: 0px 1px rgb(0.0.0. 0.5);*/
+    z-index: 1;
+}
+
+/*Configurações Padrões*/
+ul.menu, .menu li, .menu a{ margin:0; padding:7px; list-style:none; text-decoration:none;}
+ul.menu ul{ position:absolute; display:none;}
+
+/* Configurações nivel 1*/
+ul.menu{ float:left; font-family:Verdana, Geneva, sans-serif; font-size:15px;  padding:0 5px; background: #393276}
+.menu li{ float:left; width:auto; position:relative;}
+.menu li a{ display:block; padding:0 20px; line-height:45px; height:45px; float:left; transition:all 0.1s linear; }
+
+.menu > li > a > i{
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1{ display:block; top:45px; left:0; padding:5px; width:300px;    }
+.menu ul.submenu-1 a{  width:250px; padding:0 20px; border-radius:5px;  }
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-2{ display:block; top:0; left:195px; padding:5px; width:200px; }
+.menu ul.submenu-2 a{  width:160px; padding:0 20px; }
+
+/* Configurações nivel 3*/
+.menu li:hover > ul.submenu-3{ display:block; top:0; left:195px; padding:5px; width:200px;  }
+.menu ul.submenu-3 a{  width:160px; padding:0 20px; border-radius:5px; }
+
+
+.menu > li > a > img{
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+    height: 30px;
+    width: 70px;
+}
+
+/*Configurações de cores*/
+
+/*nivel 1*/
+.menu{background:transparent; }
+.menu a{ color: #f5f5f5; font-weight: bold;}
+.menu li:hover > a:hover{color: #fff;}
+
+/*nivel 2*/
+.submenu-1{ margin-left: 50px; background:#393276;}
+.submenu-1 a{color:#f5f5f5;}
+
+/*nivel 3*/
+.submenu-2{ background:#393276;}
+.submenu-2 a{color:#f5f5f5;}
+
+/*nivel 3*/
+.submenu-3{ background:#fff;}
+.submenu-3 a{color:#f5f5f5;}
+.submenu-3 li:hover > a{ background:transparent; }
+
+#geral_info{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 730px;
+    height: 400px;
+    margin-left: -365px;
+    /*box-shadow: 0 0 5px rgba(0,0,0,.12);*/
+    border-radius: 8px;
+}
+
+.comemoracao{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 400px;
+    width: 450px;
+    float: left;
+}
+
+.comemoracao > img{
+    height: 400px;
+    width: 400px;
+    border-radius: 4px;
+}
+
+.ferias{
+    width: 300px;
+    height: 250px;
+    float: top;
+    float: right;
+}
+
+.ferias > img{
+    width: 300px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+
+.central{
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: transparent;
+    margin-bottom: 50px;
+}
+
+.esquerda{
+    position: absolute;
+    left: 0px;
+    width: 400px;
+}
+
+.direita{
+    position: absolute;
+    right: 0px;
+    width: 400px;
+}
+
+.itens{
+    height: 100px;
+    border-radius: 8px;
+    /*    background-color: rgb(204, 204, 204);*/
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    min-height: 250px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: linear;
+    width: 10% !important;
+    min-width: 200px;
+    color: transparent;
+    text-align: center;
+}
+
+.itens:hover{
+    color: #393276;
+    opacity: 0.7;
+    text-shadow: 0px 1px 2px #000000;
+}
+
+.back_itens_cinza{
+    background: #FCE727;
+}
+
+.back_itens_vermelho{
+    background: #CC2514;
+}
+
+.tip > .titulo_item{
+    padding: 20px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    /*text-align: center;*/
+}
+
+.tip > .descricao_item{
+    width: 100%;
+    font-size: 12px;
+    /*text-align: center;*/
+}
+
+/*.back_itens_conduta{
+    background: #fff;
+    background: #137F00;
+}
+
+.back_itens_chamado{
+    background: #fff;
+    background: #CC2514;
+}
+
+.back_itens_pessoal{
+    background: #fff;
+    background: #c3c3c3;
+}
+
+.back_itens_info{
+    background: #fff;
+    background: #CC2514;
+}*/
+
+.itens > img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 86px;
+    height: 86px;
+    margin-left: -43px;
+    margin-top: -43px;
+}
+
+.rodape{
+    position: relative;
+    left: 0px;
+    height: 40px !important;
+    width: 100%;
+    background: #111111;
+    
+}
+
+.rodape > span{
+    margin-left: 30px;
+    font-size: 12px;
+    color: #686868;
+}
+
+.rodape_icones{
+    position: absolute;
+    right: 50px;
+    top: 22px;
+    float: left;
+    text-align: center;
+}
+
+.icon_face{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: #3b5998;
+    margin-right: 10px;
+    float: left;
+}
+
+.icon_face > i{
+    position: relative;
+    top: 7px;
+    color: #fff;
+}
+
+.icon_site{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: #fff;
+    margin-right: 10px;
+    float: left;
+}
+
+.icon_site > i{
+    position: relative;
+    top: 7px;
+    color: #000;
+}
+
+.icon_contato{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: #7870cc;
+    margin-right: 10px;
+    float: left;
+}
+
+.icon_contato > i{
+    position: relative;
+    top: 7px;
+    color: #fff;
+}
+
+.tip {
+    color: #fff;
+    background:#1d1d1d;
+    display:none; /*--Hides by default--*/
+    padding: 10px;
+    position:absolute;	
+    z-index:1000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.central_negado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 400px;
+    margin-left: -300px;
+    margin-top: -200px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.top_negado{
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.top_negado > span{
+    color: #CC2514;
+    font-size: 28px;
+}
+
+.centro_negado{
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    text-align: center;  
+}
+
+.centro_negado > span.desculpe{
+    font-size: 16px;
+}
+
+.centro_negado > span.informacao{
+    font-size: 14px;
+}
+
+.img_negado{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.img_negado > img{
+    width: 100px;
+    height: 100px;
+}
+
+.modal{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.56);
+    z-index: 9;
+    display: none;
+}
+
+.info_{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    width: 660px;
+    height: 520px;
+    border-radius: 8px;
+    margin-left: -330px;
+    background: transparent;
+    overflow: auto;
+    padding-right: 5px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.top_regra{
+    position: absolute;
+    top: 10px;  
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.top_regra > span{
+    color: #262626;
+    font-size: 20px;
+}
+
+.info_ > .informacao_regra{
+    position: absolute;
+    top: 80px;
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #262626;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.rodape_regra{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.rodape_regra > img{
+    width: 140px;
+    height: 80px;
+}
+
+.institucioal{
+    margin-bottom: 50px;
+}
+
+.institucioal > ul{
+    font-size: 14px;
+    color: #262626;
+}
+
+.inst_titulo{
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.inst_desc{
+    font-size: 14px;
+    color: #262626;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.lojas{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    width: 840px;
+    height: 500px;
+    border-radius: 8px;
+    margin-left: -420px;
+    overflow: auto;
+    overflow-style: marquee-block;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.loja{
+    width: 400px;
+    height: 400px;
+    margin-right: 10px;
+    float: left;
+}
+
+.loja_mapa{
+}
+
+.loja_titulo{
+    font-size: 16px;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.loja_mapa > iframe{
+    width: 395px;
+    height: 305px;
+}
+
+.fale_conosco{
+    width: 650px;
+    
+}
+
+.fale_conosco > form > input{
+    width: 95%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.fale_conosco > form > label{
+    font-size: 14px;
+    color: #262626;
+}
+
+.fale_conosco > form > label > span{
+    font-size: 14px;
+    color: #CC2514;
+    font-weight: bold;
+}
+
+.fale_conosco > form > textarea{
+    width: 650px;
+    width: 95%;
+    height: 200px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+}
+
+.btnFale{
+    width: 100px !important;
+    height: 45px !important;
+    border: none;
+    border-radius: 8px;
+    background: #393276;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(17, 17, 17, 0.54);
+    border-radius: 4px;
+    height: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.geral_feed{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    margin-left: -400px;
+    overflow: auto;
+}
+
+
+.feed{
+    position: relative;
+    width: 700px;
+    min-height: 380px;
+    background: #fff;
+/*    background-image: url(../..//img/Convite-ou-Moldura-Festa-Junina.jpg) !important; 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.foto_perfil{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.foto_perfil > img{
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+}
+
+.head_feed{
+    position: absolute;
+    left: 80px;
+    top: 20px;
+    height: 40px;
+}
+
+.span_usuario{
+    color: #20c05c;
+    font-size: 14px;
+}
+
+.span_data{
+    color: #686868;
+    font-size: 12px;
+}
+
+.feed_conteudo{
+    position: relative;
+    top: 100px;
+}
+
+.feed_conteudo > h1{
+    width: 650px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.55);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feed_conteudo > h4{
+    width: 650px;
+    text-align: center;
+    color: #111111;
+    font-weight: 100;
+    padding-left: 15px;
+    padding-right: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rodape_feed{
+    position: absolute;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+}
+
+.slide_button{
+    position: absolute;
+    right: 15px;
+    
+}
+
+.item_slide{
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin-left: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+.item_slide_ativo{
+    background: #20c05c;
+}
+
+.item_slide_inativo{
+    background: #DDDDDD;
+}
+
+a.item{
+    width: 300px;
+}
+
+.itens_index{
+    float: left;
+    border-radius: 4px;
+    height: 100px;
+    width: 300px;
+    max-width: 300px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: #393276;
+}
+
+.itens_index > span{
+    position: relative;
+    top: 20px;
+    color: #fff;
+}

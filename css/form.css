@@ -1,0 +1,21 @@
+
+
+body{
+    background-color: #525252;
+}
+.centered-form{
+	
+	margin-left:100px;
+	margin-right:-1000px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+.container{
+width:720px;
+height:720px
+margin-top:80px;	
+	
+}
